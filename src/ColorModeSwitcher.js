@@ -15,6 +15,7 @@ const ColorModeSwitcher = props => {
       right={'4'}
       onClick={toggleColorMode}
       icon={<SwitchIcon />}
+      zIndex={'10'}
       {...props}
     />
   );
