@@ -1,4 +1,4 @@
-import { Box, Container, Heading, Image } from '@chakra-ui/react';
+import { Box, Container, Heading, Image, Stack, Text } from '@chakra-ui/react';
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
@@ -24,9 +24,40 @@ const Home = () => {
     <Box>
       <MyCarousel />
 
-      <Container maxW={'container.xl'} minH={'100vh'} p={'16'} >
+      <Container maxW={'container.xl'} minH={'100vh'} p={'16'}>
+        <Heading
+          textTransform={'uppercase'}
+          py={'2'}
+          w={'fit-content'}
+          borderBottom={'2px solid'}
+          m={'auto'}
+        >
+          {' '}
+          Services
+        </Heading>
 
+        <Stack
+          h={'full'}
+          p={'4'}
+          alignItems={'center'}
+          direction={['column', 'row']}
+        >
+          <Image src={img5} h={['40', '400']} filter={'hue-rotate(-130deg)'} />
 
+          <Text letterSpacing={'widest'} lineHeight={'190%'} p={['4', '16']} textAlign={'center'}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+            architecto eaque eius cum eum, dolorem veritatis consectetur,
+            accusamus assumenda mollitia quo porro voluptatum obcaecati pariatur
+            ea suscipit odit repellat ipsum. Aut voluptatem dolorem accusamus?
+            Reprehenderit perspiciatis doloremque quae quos repudiandae
+            necessitatibus facere quibusdam amet voluptatem adipisci rem laborum
+            iusto, tempora qui eius fugiat expedita ad laudantium nulla tenetur
+            deserunt saepe! Voluptatem sapiente, modi aspernatur nihil eligendi
+            voluptatum ex quisquam deserunt velit obcaecati architecto explicabo
+            esse accusantium consequuntur eius quia porro aliquam quis maiores,
+            numquam minima nobis vitae. Quis, eos. Exercitationem!
+          </Text>
+        </Stack>
       </Container>
     </Box>
   );
